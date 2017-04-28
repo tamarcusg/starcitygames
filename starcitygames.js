@@ -1,9 +1,9 @@
 var currentDeckName; //name of the selected deck 
 var deck; //holds an array of card_id's
-var savedDeck = new Array(); //hold original contents of the deck variable
+var savedDeck = new Array(); //holds original contents of the deck variable
 
 $(document).ready(function() {
-    //disables button until a deck has been selected
+    //disables buttons until a deck has been selected
     document.getElementById("hand").disabled = true;
     document.getElementById("draw").disabled = true;
 
@@ -44,7 +44,7 @@ $(document).ready(function() {
     });
     
     /*
-     * Checks to see if "Draw Hand: button is clicked.
+     * Checks to see if "Draw Hand" button is clicked.
      * If so, call drawCard.
      */
     $(document).on("click", "#draw", function() {
@@ -60,7 +60,7 @@ $(document).ready(function() {
  * If the deck is empty, it alerts the user and stops drawing.
  * The card_id is then passed in a call to showCardImage.php, which displays the card_image.
  * 
- * param tohand determines if the card_image is added to the hand div or the draw div.
+ * param->tohand determines if the card_image is added to the hand div or the draw div.
  */
 function drawCard(tohand) {
     var emptyFlag = false;
@@ -115,7 +115,7 @@ function drawCard(tohand) {
 }
 
 /*
- * Passes name of selected deck in a call to printDeckList.php, which appends the decklist to 
+ * Passes the name of the selected deck in a call to printDeckList.php, which appends the decklist to 
  * the decklist div.
  * Once the decklist is displayed, it shows an image of a given card on the list on hover.
  */
