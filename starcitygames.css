@@ -1,0 +1,42 @@
+body {
+    overflow-x:scroll;    
+}
+
+#cardImg {
+    margin:3px;
+}
+
+#divhand {
+    white-space:nowrap;
+    display:inline-block;
+}
+
+#divdraw {
+    white-space:nowrap;
+    overflow-x:scroll;
+    width:1450px;
+}
+
+#fieldsetdecklist {
+    width:450px;
+    float:left;
+}
+
+#divdecklist {
+    border: 1px solid black;
+}
+
+#divdecktitle p {
+    font-size:30px;
+}
+
+#divformat p {
+    font-size:20px;
+}
+
+#divtypetitle {
+    background-color:grey;
+    color:yellow;
+    text-align:center;
+}
+
