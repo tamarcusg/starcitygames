@@ -2,6 +2,7 @@ var currentDeckName; //name of the selected deck
 var deck; //holds an array of card_id's
 var savedDeck = new Array(); //holds original contents of the deck variable
 
+
 $(document).ready(function() {
     //disables buttons until a deck has been selected
     document.getElementById("hand").disabled = true;
@@ -20,7 +21,6 @@ $(document).ready(function() {
                 savedDeck[i] = deck[i];
             }
             document.getElementById("hand").disabled = false;
-            document.getElementById("draw").disabled = false;
         }
     });
 
@@ -40,6 +40,7 @@ $(document).ready(function() {
         for (var i = 0; i < 7; i++) {
             drawCard(true);
         }
+        document.getElementById("draw").disabled = false;
         setTimeout(function(){document.getElementById("hand").disabled = false;}, 300); 
     });
     
